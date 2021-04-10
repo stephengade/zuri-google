@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap");
+html, body {
+  font-size: 65.5%;
+}
+
+.nav-link {
+  color: #000;
+}
+
+.nav-link:hover {
+  opacity: .7;
+}
+
+body {
+  overflow: hidden;
+  width: 100vw;
+}
+
+.body-section {
+  height: 100%;
+}
+
+.body-section .top-section {
+  
+  display: flex;
+  
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.body-section .top-section a {
+  padding-left: 2rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+      align-self: center;
+}
+
+.body-section .top-section .top-menu {
+      align-self: center;
+}
+
+.body-section .top-section .top-menu img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.body-section .top-section .top-account {
+      align-self: center;
+  padding: 1.5rem;
+}
+
+.body-section .top-section .top-account img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+
+.body-section .home-body {
+  width: 100%;
+  margin-top: 2rem;
+  
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body-section .home-body .home-brand {
+  margin: 0 auto;
+}
+
+.body-section .home-body .home-brand img {
+  width: 250px;
+  
+  display: flex;
+  
+          flex-direction: row;
+  margin: 0 auto;
+}
+
+.body-section .home-body .search-bar {
+  display: block;
+  width: 50%;
+  margin: 1rem auto;
+  border-style: solid;
+  border-color: #f8f9fa;
+  border-radius: 25px;
+  padding: .5rem;
+}
+
+.body-section .home-body .search-bar img {
+  width: 4%;
+  cursor: pointer;
+}
+
+.body-section .home-body .search-bar input {
+  outline: none;
+  border: none;
+  width: 90%;
+  height: 30.5167px;
+  font-size: 1.5rem;
+  caret-color: red;
+}
+
+.body-section .home-body .home-buttons {
+  margin: 1rem auto;
+  
+  display: flex;
+  
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 30%;
+  text-align: center;
+}
+
+.body-section .home-body .home-buttons button {
+  padding: 0.7rem;
+  background-color: #f8f9fa;
+  outline: none;
+  border-style: none;
+  border-radius: 2px;
+}
+
+.body-section .home-body .home-buttons button:hover {
+  border-color: #f8f9fa;
+}
+
+.body-section .home-body .home-buttons button a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #3c4043;
+  opacity: .8;
+}
+
+.home-langs {
+  margin: 2rem auto;
+}
+
+.home-langs p {
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .row-1 {
+  font-size: 1.5rem;
+  padding: 1.4rem 3rem;
+}
+
+footer .row-1 p {
+  color: #70757a;
+}
+
+footer .row-2 {
+  
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 3rem;
+}
+
+footer .row-2 ul {
+  
+  display: flex;
+  
+          flex-direction: row;
+}
+
+footer .row-2 ul a {
+  color: #70757a;
+  padding-right: 2rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+footer .row-2 ul a:hover {
+  text-decoration: underline;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px), (min-width: 480px) and (max-width: 767px), (min-width: 768px) and (max-width: 1023px) {
+  .search-bar {
+    width: 80% !important;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .home-buttons {
+    width: 55% !important;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .home-buttons {
+    width: 40% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .home-buttons {
+    width: 30% !important;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px), (min-width: 480px) and (max-width: 767px) {
+  footer {
+    text-align: center;
+  }
+  footer .row-2 {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .row-2 .link-1 {
+    margin-bottom: .5rem;
+  }
+  footer .row-2 .link-1 ul li {
+    margin: auto;
+    color: #70757a;
+    font-size: 1.2rem;
+    text-decoration: none;
+    line-height: 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
